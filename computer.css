@@ -31,7 +31,8 @@ body {
     rgb(23, 255, 255));
 
     background-size: 400% auto;
-    animation: movegradient 9s linear infinite alternate;
+    animation: movegradient 12s linear infinite alternate;
+    max-width: 1470px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -48,8 +49,8 @@ html, body {
 
 
 .leftbar, .leftbar2{
-    left: 0;;
-    height: 800px;
+    left: 0;
+    height: 78vh;
     width: 10vw;
     position: relative;
     font-size: larger;
@@ -85,12 +86,12 @@ html, body {
     left:0;
 }
 
-a{
+#main a{
     text-decoration: none;
     color: inherit;
     z-index: 999;
 }
-a:hover{
+#main a:hover{
     color: #3d007a;
     font-weight: bold;
     text-decoration: underline;
@@ -148,12 +149,10 @@ a:hover{
     animation: slideright 1s ease-out forwards;
 }
 .contactinfo{
-    font-size: medium;
-    margin: 10px;
-}
-.infotitle{
     font-size: large;
+    margin: 20px;
 }
+
 
 
 
@@ -163,7 +162,7 @@ a:hover{
     height: 70px;
     background: linear-gradient(to right,rgb(255,195,255),rgb(255,179,128),rgb(255,195,255));
     background-size: 400% auto;
-    animation: movegradient 6s linear infinite alternate;
+    animation: movegradient 8s linear infinite alternate;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,109 +171,75 @@ a:hover{
 
 
 
-#goalcontent{
+#interestcontent{
     width: 100vw;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-.gaolsection{
-    height: 700px;
-    width: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
-.option{
-    width: 300px;
-    height: 180px;
-    display: flex;
-    margin-bottom: 0;
-    flex-direction: column;
-    justify-content: center;
-    border: 4px dotted rgb(204, 0, 204);
+
+
+
+.project{
+    height: auto;
+    width: 1200px;
+}
+
+.projectcontent{
+    width: 1100px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: 220px 2fr 1fr;
+    gap: 30px;
     align-items: center;
-    background-color: rgb(209, 191, 0);
-    color: #ff47e3;
-    margin: 50px;
-    transition: box-shadow 0.5s ease;
+    padding-bottom: 25px;
+    padding-left: 100px;
 }
-.option:hover{
-    box-shadow: 0px 0px 10px 3px rgb(255, 140, 120) , 0px 0px 10px 12px rgb(255,195,255);
+
+.project_image{
+    width: 250px; 
+    height: auto;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.goalhoverpart{
-    width: 400px;
-    height: 530px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translate(0,70%);
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    transition: all 1s ease;
+.project_image:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-.option:hover .goalhoverpart{
-    opacity: 1;
-    visibility: visible;
+.githubicon{
+    width: auto; 
+    height: 45px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-#contentdiv{
-    position: absolute;
-    visibility: visible;
-    opacity: 1;
-    top: 50px;
-    width: 780px;
-    height: 300px;
-    background-color: rgb(255,179,128);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 2000px;
-    z-index: 2;
-    transition: all 0.8s ease;
-}
-#contentdiv p{
-    color: #3d007a;
-    font-size: 20px;
-    line-height: 1;
-}
-.gaolsection:hover ~ #contentdiv{
-    opacity: 0;
-    visibility: hidden;
-}
-.goalinfo{
-    height: 330px;
-    width: 545px;
-    background-color: rgb(220, 195, 255);
-    box-shadow: 0px 0px 10px 3px rgb(255, 140, 120) , 0px 0px 10px 12px rgb(255,195,255);
-    transition: height 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
-.coursenamediv{
-    display: flex;
-    flex-direction: column;
-    width: 530px;
-    height: 135px;
-    padding-left: 15px;
-    font-size: 15px;
-    color: rgb(90, 0, 120);
+.githubicon:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 
 
 
 
-
-#aboutmecontent{
+#skillcontent{
     width: 70vw;
-    height: 640px;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
+
+.SkillsSection{
+    width: 80vw; 
+    height: auto;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
 .CVt{
     padding-left: 60px; 
     font-size: 18px;
@@ -282,81 +247,46 @@ a:hover{
 }
 .CVp{
     font-size: 18px;
-    color: #300060;
+    color: black;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#cursordiv{
+.endingblock{
     width: 100vw;
-    height: 35px;
-    top: -50px;
-    position: absolute;
+    height: auto;
+    line-height: 0.5;
+    font-size: 12px;
+    background: linear-gradient(to right,rgb(255,195,255),rgb(255,179,128),rgb(255,195,255));
+    background-size: 400% auto;
+    animation: movegradient 6s linear infinite alternate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: black;
 }
-.cursorfollower {
-    filter: invert(100%);
-    mix-blend-mode: multiply;
-    position: fixed;
-    pointer-events: none;
+
+#endingline{
+    width: 100vw;
+    height: 2px;
+    background-color: black;
 }
-#cursorfollower0 {
-    width: 54px;
-    height: 54px;
-    transition: transform 0.25s linear;
-    z-index: 3;
+
+#endingtext{
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 12px 0;
 }
-#cursorfollower1 {
-    width: 51px;
-    height: 51px;
-    transition: transform 0.5s linear;
-    z-index: 3;
+
+.endingblock a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
 }
-#cursorfollower2 {
-    width: 48px;
-    height: 48px;
-    transition: transform 0.75s linear;
-    z-index: 3;
-}
-#cursorfollower3 {
-    width: 45px;
-    height: 45px;
-    transition: transform 1s linear;
-    z-index: 3;
-}
-#cursorfollower4 {
-    width: 42px;
-    height: 42px;
-    transition: transform 1.25s linear;
-    z-index: 3;
-}
-#cursorfollower5 {
-    width: 39px;
-    height: 39px;
-    transition: transform 1.5s linear;
-    z-index: 3;
-}
-#cursorfollower6 {
-    width: 36px;
-    height: 36px;
-    transition: transform 1.75s linear;
-    z-index: 3;
-}
-#cursorfollower7 {
-    width: 33px;
-    height: 33px;
-    transition: transform 2s linear;
-    z-index: 3;
+
+.endingblock a:hover {
+  text-decoration: underline;
 }
