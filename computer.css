@@ -32,7 +32,6 @@ body {
 
     background-size: 400% auto;
     animation: movegradient 12s linear infinite alternate;
-    max-width: 1470px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -45,7 +44,14 @@ html, body {
     overflow-x: hidden;
 }
 
-
+#mainscreen{
+    max-width: 1470px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 .leftbar, .leftbar2{
