@@ -45,7 +45,8 @@ html, body {
 }
 
 #mainscreen{
-    max-width: 1470px;
+    width: 100%;
+    max-width: 1460px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -56,13 +57,13 @@ html, body {
 
 .leftbar, .leftbar2{
     left: 0;
-    height: 78vh;
-    width: 10vw;
+    height: 78%;
+    width: 10%;
     position: relative;
     font-size: larger;
     color: rgb(143, 112, 255);
     background-color: transparent;
-    padding: 2.5vw;
+    padding: 2.5%;
     display: flex;
     flex-direction: column;
     animation: slideleft 1s ease-out forwards;
@@ -120,7 +121,7 @@ html, body {
     position: relative;
     display: flex;
     height: 740px;
-    width: 100vw;
+    width: 100%;
     align-items: left;
     color: rgb(143, 112, 255);
 }
@@ -129,7 +130,7 @@ html, body {
 
 #contentpart{
     height: 800px;
-    width: 85vw;
+    width: 85%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -142,7 +143,7 @@ html, body {
 
 #contactblock{
     height: 400px;
-    width: 18vw;
+    width: 20%;
     position: absolute;
     right: 0;
     top: 0;
@@ -164,7 +165,7 @@ html, body {
 
 
 .dividingblock{
-    width: 100vw;
+    width: 100%;
     height: 70px;
     background: linear-gradient(to right,rgb(255,195,255),rgb(255,179,128),rgb(255,195,255));
     background-size: 400% auto;
@@ -178,7 +179,7 @@ html, body {
 
 
 #interestcontent{
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -200,7 +201,7 @@ html, body {
     grid-template-columns: 220px 1.5fr 1fr;
     gap: 30px;
     align-items: center;
-    padding-bottom: 25px;
+    padding-bottom: 60px;
     padding-left: 100px;
 }
 
@@ -234,14 +235,14 @@ html, body {
 
 
 #skillcontent{
-    width: 70vw;
+    width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
 .SkillsSection{
-    width: 80vw; 
+    width: 80%; 
     height: auto;
     display: grid;
     grid-template-columns: 500px 1fr;
@@ -263,7 +264,7 @@ html, body {
 
 
 .endingblock{
-    width: 100vw;
+    width: 100%;
     height: auto;
     line-height: 0.5;
     font-size: 12px;
@@ -278,13 +279,13 @@ html, body {
 }
 
 #endingline{
-    width: 100vw;
+    width: 100%;
     height: 2px;
     background-color: black;
 }
 
 #endingtext{
-    width: 100vw;
+    width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
